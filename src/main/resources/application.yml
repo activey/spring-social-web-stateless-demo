@@ -1,0 +1,22 @@
+spring:
+  social:
+    linkedin:
+      appId: [INSERT APP ID HERE]
+      appSecret: [INSERT APP SECRET HERE]
+      scope:
+        - r_basicprofile
+        - r_emailaddress
+security:
+  sign-key: 123
+  jwt-token-cookie-name: X-JWT-ACCESS-TOKEN
+  jwt-token-cookie-expiration-time: 60 # seconds
+  client:
+    id: acme
+    secret: acmesecret
+    grants:
+      - authorization_code
+      - refresh_token
+      - password
+    scopes:
+      - read
+      - write
